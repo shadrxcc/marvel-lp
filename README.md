@@ -1,0 +1,1 @@
+bg-[#111]  top-[5.9em] md:top-0 md:left-0 left-[-40em] h-[100vh] w-[100%] md:h-0 md:w-0 absolute md:relative flex flex-col lg:flex-row items-center gap-[53px]

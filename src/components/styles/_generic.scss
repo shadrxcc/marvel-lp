@@ -64,3 +64,29 @@ body {
     transition: 0.7s ease-in-out;
   }
 }
+
+.hero-section {
+  background-image: linear-gradient(
+      0deg,
+      #ed1d24 -3.13%,
+      rgba(237, 29, 36, 0) 183.55%
+    ),
+    url("../../assets/hero1.svg");
+  background-repeat: repeat-x;
+  background-position-x: right;
+  background-size: inherit;
+  background-position-y: initial;
+  background-attachment: fixed;
+  width: auto;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .intro {
+    font-weight: 800;
+    font-size: 3em;
+    line-height: 75px;
+    text-align: center;
+  }
+}

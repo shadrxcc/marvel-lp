@@ -4,7 +4,7 @@ import hammer from "../assets/hammer.svg";
 
 const Getstarted = () => {
   return (
-    <div className="get-started flex flex-col items-center px-5 py-14 justify-between md:flex-row">
+    <div className="get-started flex flex-col-reverse items-center px-5 py-14 justify-between md:flex-row md:row-gap-[10em]">
       <div className="marvel-unlimited px-5 md:px-0">
         <h3>MARVEL UNLIMITED</h3>
         <p className="pt-2 pb-6">

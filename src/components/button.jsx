@@ -1,9 +1,16 @@
 import React from 'react'
+import { PropTypes } from 'prop-types'
 
-const button = () => {
+const BlackButton = ({text}) => {
   return (
-    <div>button</div>
+    <>
+    <button className='bg-[#202020]'>{text}</button>
+    </>
   )
 }
 
-export default button
+export default BlackButton;
+
+BlackButton.propTypes = {
+  text: PropTypes.string,
+}

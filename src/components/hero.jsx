@@ -8,8 +8,8 @@ const Hero = () => {
     <div className='hero-section'>
        <div className='hero-text'>
             <h3 className='intro'>FACE FRONT, TRUE BELIEVERS!</h3> 
-            <Switch checked={clicked} onChange={(e) => setClicked(e.target.checked)} />
-        </div> 
+            
+        </div> <Switch checked={clicked} onChange={(e) => setClicked(e.target.checked)} />
     </div>
   )
 }

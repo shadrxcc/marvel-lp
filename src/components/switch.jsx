@@ -4,6 +4,7 @@ import { Check, X } from "react-feather";
 const Switch = forwardRef((props, forwardRef) => {
   return (
     <>
+    <div className="absolute top-[32em] pl-[1em]">
       <label className="cursor-pointer">
         <input type="checkbox" className="hidden" ref={forwardRef} {...props} />
         <div
@@ -21,7 +22,7 @@ const Switch = forwardRef((props, forwardRef) => {
             {props.checked ? <Check size={20} /> : <X size={20} />}
           </div>
         </div>
-      </label>
+      </label></div>
     </>
   );
 });

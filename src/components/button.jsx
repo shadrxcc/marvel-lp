@@ -5,7 +5,7 @@ const BlackButton = ({text}) => {
   const caps = text.c
   return (
     <>
-    <button className='bg-[#202020]'>{text}</button>
+    <button className='bg-[#202020] black'>{text}</button>
     </>
   )
 }
@@ -13,5 +13,17 @@ const BlackButton = ({text}) => {
 export default BlackButton;
 
 BlackButton.propTypes = {
+  text: PropTypes.string,
+}
+
+export const RedButton = ({text}) => {
+  return (
+    <>
+    <button className='red-btn'>{text}</button>
+    </>
+  )
+}
+
+RedButton.propTypes = {
   text: PropTypes.string,
 }

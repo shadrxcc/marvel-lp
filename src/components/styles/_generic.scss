@@ -63,7 +63,7 @@ body {
   #navbar.active {
     left: 0;
     transition: 0.7s ease-in-out;
-    z-index: 10
+    z-index: 10;
   }
 }
 
@@ -98,22 +98,112 @@ button {
 }
 
 .get-started {
-  background: #ED1D24;
+  background: #ed1d24;
   h3 {
     font-weight: 800;
-font-size: 24px;
-line-height: 47px;
-
+    font-size: 24px;
+    line-height: 47px;
   }
 
   p {
     font-weight: 400;
-font-size: 18px;
-line-height: 23px;
+    font-size: 20px;
+    line-height: 23px;
   }
 
   .marvel-unlimited {
-        width: 390px;
+    width: 390px;
     height: 213px;
   }
+
+  .black {
+    font-weight: 600;
+    line-height: 23px;
+  }
+}
+
+#character-main {
+  background: $bgblack;
+  .character-container {
+    display: flex;
+  }
+
+  .character-detail {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0.9em;
+    visibility: hidden;
+    width: 100%;
+  }
+
+  #character:hover {
+    cursor: pointer;
+    background: $faded_red;
+  }
+
+  #character:hover .character-detail {
+    visibility: visible;
+    background: $faded_red;
+  }
+}
+
+// .hammer {
+//   animation: hammer 1.5s ease-in-out infinite;
+//   transition: all 0.15s ease-in-out;
+// }
+
+// @keyframes hammer {
+//   0% {
+//     translate: 0;
+//   }
+//   50% {
+//     translate: 0 0.2rem;
+//   }
+//   75% {
+//     translate: 0;
+//   }
+//   100% {
+//     translate: 0;
+//   }
+// }
+
+.location-insider {
+  background: $bgblack;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 2em;
+
+  #insider {
+    text-align: center;
+    padding: 0 1em;
+  }
+
+  #marvel-insider {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    color: #ed1d24;
+  }
+
+  #watch-earn {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .reward {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+
+.red-btn {
+  background: $red;
+  font-weight: 600;
+  line-height: 23px;
 }

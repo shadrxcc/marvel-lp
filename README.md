@@ -1,1 +1,1 @@
-bg-[#111]  top-[5.9em] md:top-0 md:left-0 left-[-40em] h-[100vh] w-[100%] md:h-0 md:w-0 absolute md:relative flex flex-col lg:flex-row items-center gap-[53px]
+http://gateway.marvel.com/v1/public/comics?ts=1&apikey=3377978565cce1a5c3f87711e1427366&hash=9fa0d653760e99a8588bb5b372d12af3

@@ -89,7 +89,7 @@ const Footer = () => {
         {footerbottom.map((link, id) => {
           return (
             <>
-              <div className="flex text-[15px] gap-[2em]" key={id}>
+              <div className="flex text-[15px] gap-[.4em] md:gap-[2em]" key={id}>
                 <p>{link.link1}</p>
                 <p>{link.link2}</p>
               </div>

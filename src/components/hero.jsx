@@ -3,11 +3,11 @@ import { useState } from "react";
 import Switch from "./switch";
 import endgame from "../assets/endgame.mp3";
 import { useEffect } from "react";
+import { useRef } from "react";
 
 const Hero = () => {
-  const [clicked, setClicked] = useState(false);
-
-  const audio = new Audio(endgame);
+  const [clicked, setClicked] = useState(true);
+  const myRef = useRef()
 
   const handleChange = () => {
     setClicked(!clicked);
@@ -15,17 +15,18 @@ const Hero = () => {
 
   useEffect(() => {
     if (clicked) {
-      audio.play();
+      myRef.current.play()
     } else {
-      audio.pause();
+      myRef.current.pause();
     }
   }, [clicked]);
 
   return (
     <div className="hero-section">
       <div className="hero-text">
-        <h3 className="intro">FACE FRONT, TRUE BELIEVERS!</h3>
+        <h3 className="intro text-[28px] md:text-[50px]">FACE FRONT, TRUE BELIEVERS!</h3>
       </div>
+      <audio ref={myRef} src={endgame} loop />
       <Switch checked={clicked} onChange={handleChange} />
     </div>
   );

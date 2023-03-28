@@ -207,3 +207,14 @@ button {
   font-weight: 600;
   line-height: 23px;
 }
+
+#footer-wrapper {
+  background: $bgblack;
+  .subtext {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    color: rgba(255, 255, 255, 0.8);
+  }
+}

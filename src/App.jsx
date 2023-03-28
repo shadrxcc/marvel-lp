@@ -1,4 +1,5 @@
 import Featuredcharacters from './components/featuredcharacters'
+import Footer from './components/footer'
 import Getstarted from './components/getstarted'
 import Header from './components/header'
 import Hero from './components/hero'
@@ -12,6 +13,7 @@ function App() {
     <Getstarted/>
     <Featuredcharacters/>
     <Insider/>
+    <Footer/>
     </>
   )
 }

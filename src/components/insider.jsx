@@ -8,7 +8,7 @@ const Insider = () => {
       <div>
         <img className="w-[50em]" src={locations} alt="locations" />
       </div>
-      <div id="insider">
+      <div id="insider" className="py-7 lg:py-0">
         <p id="marvel-insider">Marvel Insider</p>
         <p id="watch-earn">Watch, Earn, Redeem!</p>
         <p className="reward pt-[7px] pb-[21px]">

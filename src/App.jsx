@@ -1,3 +1,4 @@
+import Comics from './components/comics'
 import Featuredcharacters from './components/featuredcharacters'
 import Footer from './components/footer'
 import Getstarted from './components/getstarted'
@@ -12,6 +13,7 @@ function App() {
     <Hero/>
     <Getstarted/>
     <Featuredcharacters/>
+    <Comics/>
     <Insider/>
     <Footer/>
     </>

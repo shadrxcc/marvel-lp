@@ -14,7 +14,7 @@ const Hero = () => {
   };
 
   useEffect(() => {
-    if (clicked) {
+    if (clicked === 'true') {
       myRef.current.play()
     } else {
       myRef.current.pause();

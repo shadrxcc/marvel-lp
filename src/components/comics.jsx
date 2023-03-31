@@ -11,7 +11,7 @@ const Comics = () => {
   const fetchComics = async () => {
     const response = await axios
       .get(
-        "http://gateway.marvel.com/v1/public/comics?limit=100&ts=1&apikey=3377978565cce1a5c3f87711e1427366&hash=9fa0d653760e99a8588bb5b372d12af3"
+        "https://gateway.marvel.com/v1/public/comics?limit=100&ts=1&apikey=3377978565cce1a5c3f87711e1427366&hash=9fa0d653760e99a8588bb5b372d12af3"
       )
       .catch((err) => {
         console.log(err);

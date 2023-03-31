@@ -1,27 +1,11 @@
 import BlackButton from "./button";
 import hammer from "../assets/hammer.svg";
-import Lottie from "lottie-web";
-import { useEffect } from "react";
 import { useRef } from "react";
-import lightning from '../assets/65922-red-lightning.json'
 import { Player } from "@lottiefiles/react-lottie-player";
 
 const Getstarted = () => {
-
-  const container = useRef(null)
-// useEffect(() => {
-// Lottie.loadAnimation({
-//   container: container.current,
-//   renderer: 'svg',
-//   loop: true,
-//   autoplay: true,
-//   animationData: lightning
-// })
-// }, [])
-
-//https://assets5.lottiefiles.com/packages/lf20_g1wiidwh.json
   return (
-    <div className="get-started flex flex-col-reverse items-center px-5 py-14 justify-around md:flex-row md:row-gap-[10em]">
+    <div className="get-started flex flex-col-reverse items-center px-5 py-14 justify-around gap-y-[5em] md:flex-row md:row-gap-[10em]">
       <div className="marvel-unlimited px-5 md:px-0">
         <h3>MARVEL UNLIMITED</h3>
         <p className="pt-2 pb-6">
@@ -31,11 +15,9 @@ const Getstarted = () => {
         <BlackButton text={`GET STARTED`} />
       </div>
 
-      <div className="">
-        {/* <Player src="https://assets5.lottiefiles.com/packages/lf20_g1wiidwh.json" className="player" loop autoplay/> */}
+      <div className="flex">
+        <Player src="https://lottie.host/9400798c-a488-4072-94d8-1ba9dd48fba6/NVYgdxDrxg.json" className="player absolute w-[20em] flex" loop autoplay/>
           <img src={hammer} className="w-[20em] hammer" alt="thor's hammer" />
-      
-        
       </div>
     </div>
   );

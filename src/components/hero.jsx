@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import { useRef } from "react";
 
 const Hero = () => {
-  const [clicked, setClicked] = useState(true);
+  const [clicked, setClicked] = useState(false);
   const myRef = useRef()
 
   const handleChange = () => {
@@ -14,7 +14,7 @@ const Hero = () => {
   };
 
   useEffect(() => {
-    if (clicked === 'true') {
+    if (clicked) {
       myRef.current.play()
     } else {
       myRef.current.pause();

@@ -18,7 +18,7 @@ const Comics = () => {
       });
     setComics(response.data.data.results);
   };
-  console.log(comics);
+
   useEffect(() => {
     fetchComics();
   }, []);
@@ -28,7 +28,7 @@ const Comics = () => {
   const currentPosts = comics.slice(firstPostIndex, lastPostIndex);
   return (
     <div className="comics p-0 md:p-[7em]">
-      <p className="text-xl py-2 font-semibold text-center md:text-start">
+      <p className="text-2xl md:text-3xl py-4 font-semibold text-center md:text-start">
         MARVEL COMICS
       </p>
       <div className="flex flex-col">

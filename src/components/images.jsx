@@ -30,5 +30,10 @@ export const featChar = [
         char: trey,
         heroname: 'Aegis',
         name: 'Trey Rollins'
-    }
+    },
+    {
+        char: thor,
+        heroname: 'Scarlet Witch',
+        name: 'Wanda Maximoff'
+    },
 ]

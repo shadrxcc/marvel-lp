@@ -33,7 +33,7 @@ export const featChar = [
     },
     {
         char: thor,
-        heroname: 'Scarlet Witch',
-        name: 'Wanda Maximoff'
+        heroname: 'Thor',
+        name: 'Thor Odinson'
     },
 ]

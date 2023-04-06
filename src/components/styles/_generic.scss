@@ -123,8 +123,12 @@ button {
 
 #character-main {
   background: $bgblack;
+  display: flex;
   .character-container {
     display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    flex-shrink: 0;
   }
 
   .character-detail {
@@ -168,6 +172,7 @@ button {
 //     translate: 0;
 //   }
 // }
+
 
 .location-insider {
   background: $bgblack;

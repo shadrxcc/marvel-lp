@@ -1,1 +1,8 @@
-http://gateway.marvel.com/v1/public/comics?ts=1&apikey=3377978565cce1a5c3f87711e1427366&hash=9fa0d653760e99a8588bb5b372d12af3
+## Marvel Landing Page
+Flexed my hands on a Marvel inspired landing page designed by [@AdeolaAdekoya](https://github.com/AdeolaAdekoya)
+
+## Built with
+- Vitejs
+- React
+- SCSS
+- Tailwind

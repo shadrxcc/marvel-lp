@@ -19,13 +19,17 @@ const Comics = () => {
     setComics(response.data.data.results);
   };
 
+  const filtercomics = comics.filter((comik) => {
+    return comik.thumbnail.path.endsWith("image_not_available") !== true;
+  });
+
   useEffect(() => {
     fetchComics();
   }, []);
 
   const lastPostIndex = currentPage * postPerPage;
   const firstPostIndex = lastPostIndex - postPerPage;
-  const currentPosts = comics.slice(firstPostIndex, lastPostIndex);
+  const currentPosts = filtercomics.slice(firstPostIndex, lastPostIndex);
   return (
     <div className="comics p-0 md:p-[7em]">
       <p className="text-2xl md:text-3xl py-4 font-semibold text-center md:text-start">
@@ -46,7 +50,7 @@ const Comics = () => {
           })}
         </div>
         <Paginate
-          totalPosts={comics.length}
+          totalPosts={filtercomics.length}
           setCurrentPage={setCurrentPage}
           currentPage={currentPage}
           postsPerPage={postPerPage}
